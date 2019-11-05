@@ -1,0 +1,20 @@
+
+{ "+": "yao garbled circuit tests, naranker dulay 2018",
+
+  "circuits" : [
+
+  { "name": "mod test",
+    "alice": [1, 2, 3],
+    "bob":   [4, 5, 6],
+    "out":   [13,13],
+    "gates": [
+      { "id":9, "type":"ans1",  "in": [1,2] },
+      { "id":10, "type":"ans2",  "in": [4,5] },
+      { "id":11, "type":"ans3",  "in": [5,6] },
+      { "id":12, "type":"AND",  "in": [9,10] },
+      { "id":13, "type":"OR",  "in": [12,9] }
+    ]
+  }
+
+] }
+
